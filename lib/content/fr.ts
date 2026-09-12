@@ -550,10 +550,15 @@ const fr: Deck = {
           value:
             "[777.mpt.gov.dz](https://777.mpt.gov.dz/) — Ressources et accompagnement via le Skills Center Mobilis Chlef.",
         },
-        { label: "Site web", value: "mahfoudh.dev" },
+        {
+          label: "Site web",
+          value: "[mahfoudh.dev](https://mahfoudh.dev)",
+        },
         {
           label: "YouTube",
-          value: "@mahfoudh_arous (FR) · ورشة البرمجة مع محفوظ (AR)",
+          value:
+            "[@mahfoudh_arous](https://www.youtube.com/@mahfoudh_arous) (FR) · " +
+            "[ورشة البرمجة مع محفوظ](https://www.youtube.com/@%D9%88%D8%B1%D8%B4%D8%A9_%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D9%85%D8%B9_%D9%85%D8%AD%D9%81%D9%88%D8%B8) (AR)",
         },
         {
           label: "Questions & Échanges d'expérience",
