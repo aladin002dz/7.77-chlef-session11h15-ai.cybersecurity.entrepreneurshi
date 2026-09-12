@@ -127,7 +127,7 @@
 
 ---
 
-### Diapositive 1/4 : Valoriser ses Compétences en Algérie — La Réalité du Terrain
+### Diapositive 1/5 : Valoriser ses Compétences en Algérie — La Réalité du Terrain
 - **Le marché national :**
   - Privilégiez les projets qui répondent à des besoins locaux concrets (digitalisation de commerces, amélioration de la visibilité).
   - Construisez un réseau de confiance basé sur la qualité de vos livrables.
@@ -138,23 +138,33 @@
 
 ---
 
-### Diapositive 2/4 : La Règle des 30 Jours
+### Diapositive 2/5 : Valoriser son Expertise et sa Visibilité
+- **Développer sa visibilité en ligne :** Ne restez pas dans l'ombre. Prenez la parole sur les réseaux professionnels pour partager votre expérience et vos idées.
+- **Construire un portfolio solide :** Rassemblez et documentez vos réalisations, projets et expérimentations pour prouver concrètement votre savoir-faire.
+- **Créer et expérimenter :** L'apprentissage passe par la pratique. Lancez des projets, testez de nouvelles idées et partagez ouvertement vos apprentissages.
+- **Réseauter et connecter avec les gens :** La finalité reste humaine. Utilisez ces outils pour identifier vos pairs, engager la conversation et bâtir des relations authentiques.
+
+---
+
+
+### Diapositive 3/5 : La Règle des 30 Jours
 - **Désamorcer le mythe :** L'IA est un outil, elle ne fera pas le travail à votre place. Méfiez-vous de l'idée du succès sans effort ou des résultats magiques.
 - **L'objectif stratégique :** Livrer votre **premier projet réel** (même un micro-service gratuit ou un audit) pour un partenaire dans les 30 prochains jours.
 - **Pourquoi ?** C'est la première confrontation avec le terrain qui aide souvent à dépasser le syndrome de l'imposteur.
 
 ---
 
-### Diapositive 3/4 : La Veille Stratégique — Votre Avantage Concurrentiel
-- **Dynamique technologique :** Les modèles d'IA évoluent à une vitesse sans précédent.
-- **L'avantage du premier entrant :** Celui qui identifie rapidement un cas d'usage pertinent se positionne plus facilement pour décrocher des projets locaux.
-- **Votre routine de veille sobre :**
-  - **Deux sources d'information maximum** : une newsletter synthétique (*TLDR AI* ou *The Rundown AI*) + une communauté ou chaîne technique de confiance.
-  - *« Le diplôme dit ce que vous avez appris hier. Votre veille montre ce que vous êtes capable de produire demain. »*
+### Diapositive 4/5 : Rester à Jour Sans Y Passer ses Soirées
+- **Le piège :** La surcharge informationnelle. De nouveaux modèles et outils sortent chaque semaine.
+- **La méthode minimaliste et durable :**
+  - **Pour la vidéo :** Suivre une chaîne pertinente (ex : [Entrepreneur DZ](https://www.youtube.com/@Entrepreneurdz/)).
+  - Pas 10 newsletters : **une seule** lecture ciblée (ex : [*TLDR AI*](https://tldr.tech/ai) en 5 minutes ou [*Superhuman AI*](https://www.joinsuperhuman.ai/)).
+  - Un rituel unique : 10 minutes chaque dimanche soir ou lundi matin à 08h00.
+  - *« Vous n'avez pas besoin de tout savoir. Vous avez besoin de savoir où regarder le jour où vous en aurez besoin. »*
 
 ---
 
-### Diapositive 4/4 : Votre Engagement Dès Aujourd'hui
+### Diapositive 5/5 : Votre Engagement Dès Aujourd'hui
 1. **Une preuve concrète finalisée** (mini-dossier ou audit de 2 pages avec l'aide de l'IA).
 2. **Trois prises de contact ciblées** envoyées avant 20h00 ce soir.
 3. **Double authentification (2FA) activée** sur votre email professionnel et WhatsApp.

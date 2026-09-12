@@ -399,7 +399,7 @@ const fr: Deck = {
     { type: "block", label: "Bloc 3", title: "Entrepreneuriat Digital" },
     {
       type: "content",
-      eyebrow: "Diapositive 1/4",
+      eyebrow: "Diapositive 1/5",
       title: "Valoriser ses Compétences en Algérie — La Réalité du Terrain",
       lines: [
         { marker: "bullet", bold: "Le marché national :" },
@@ -433,7 +433,34 @@ const fr: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Diapositive 2/4",
+      eyebrow: "Diapositive 2/5",
+      title: "Valoriser son Expertise et sa Visibilité",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Développer sa visibilité en ligne :",
+          text: "Ne restez pas dans l'ombre. Prenez la parole sur les réseaux professionnels pour partager votre expérience et vos idées.",
+        },
+        {
+          marker: "bullet",
+          bold: "Construire un portfolio solide :",
+          text: "Rassemblez et documentez vos réalisations, projets et expérimentations pour prouver concrètement votre savoir-faire.",
+        },
+        {
+          marker: "bullet",
+          bold: "Créer et expérimenter :",
+          text: "L'apprentissage passe par la pratique. Lancez des projets, testez de nouvelles idées et partagez ouvertement vos apprentissages.",
+        },
+        {
+          marker: "bullet",
+          bold: "Réseauter et connecter avec les gens :",
+          text: "La finalité reste humaine. Utilisez ces outils pour identifier vos pairs, engager la conversation et bâtir des relations authentiques.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Diapositive 3/5",
       title: "La Règle des 30 Jours",
       lines: [
         {
@@ -455,36 +482,41 @@ const fr: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Diapositive 3/4",
-      title: "La Veille Stratégique — Votre Avantage Concurrentiel",
+      eyebrow: "Diapositive 4/5",
+      title: "Rester à Jour Sans Y Passer ses Soirées",
       lines: [
         {
           marker: "bullet",
-          bold: "Dynamique technologique :",
-          text: "Les modèles d'IA évoluent à une vitesse sans précédent.",
+          bold: "Le piège :",
+          text: "La surcharge informationnelle. De nouveaux modèles et outils sortent chaque semaine.",
         },
-        {
-          marker: "bullet",
-          bold: "L'avantage du premier entrant :",
-          text: "Celui qui identifie rapidement un cas d'usage pertinent se positionne plus facilement pour décrocher des projets locaux.",
-        },
-        { marker: "bullet", bold: "Votre routine de veille sobre :" },
+        { marker: "bullet", bold: "La méthode minimaliste et durable :" },
         {
           marker: "bullet",
           indent: 1,
-          bold: "Deux sources d'information maximum :",
-          text: "une newsletter synthétique (TLDR AI ou The Rundown AI) + une communauté ou chaîne technique de confiance.",
+          bold: "Pour la vidéo :",
+          text: "Suivre une chaîne pertinente (ex : Entrepreneur DZ — youtube.com/@Entrepreneurdz).",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Pas 10 newsletters : une seule lecture ciblée (ex : TLDR AI — tldr.tech/ai en 5 minutes ou Superhuman AI — joinsuperhuman.ai).",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Un rituel unique : 10 minutes chaque dimanche soir ou lundi matin à 08h00.",
         },
         {
           marker: "quote",
           indent: 1,
-          text: "« Le diplôme dit ce que vous avez appris hier. Votre veille montre ce que vous êtes capable de produire demain. »",
+          text: "« Vous n'avez pas besoin de tout savoir. Vous avez besoin de savoir où regarder le jour où vous en aurez besoin. »",
         },
       ],
     },
     {
       type: "content",
-      eyebrow: "Diapositive 4/4",
+      eyebrow: "Diapositive 5/5",
       title: "Votre Engagement Dès Aujourd'hui",
       lines: [
         {

@@ -399,7 +399,7 @@ const en: Deck = {
     { type: "block", label: "Block 3", title: "Digital Entrepreneurship" },
     {
       type: "content",
-      eyebrow: "Slide 1/4",
+      eyebrow: "Slide 1/5",
       title: "Valuing Your Skills in Algeria — The Reality on the Ground",
       lines: [
         { marker: "bullet", bold: "The national market:" },
@@ -433,7 +433,34 @@ const en: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Slide 2/4",
+      eyebrow: "Slide 2/5",
+      title: "Building Your Expertise and Visibility",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Develop your online visibility:",
+          text: "Don't stay in the shadows. Speak up on professional networks to share your experience and ideas.",
+        },
+        {
+          marker: "bullet",
+          bold: "Build a solid portfolio:",
+          text: "Gather and document your work, projects, and experiments to concretely prove your expertise.",
+        },
+        {
+          marker: "bullet",
+          bold: "Create and experiment:",
+          text: "Learning happens through practice. Launch projects, test new ideas, and openly share what you learn.",
+        },
+        {
+          marker: "bullet",
+          bold: "Network and connect with people:",
+          text: "The end goal stays human. Use these tools to identify your peers, start conversations, and build genuine relationships.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Slide 3/5",
       title: "The 30-Day Rule",
       lines: [
         {
@@ -455,36 +482,41 @@ const en: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Slide 3/4",
-      title: "Staying Informed — Your Competitive Edge",
+      eyebrow: "Slide 4/5",
+      title: "Staying Current Without Losing Your Evenings",
       lines: [
         {
           marker: "bullet",
-          bold: "Technological pace:",
-          text: "AI models are evolving at an unprecedented speed.",
+          bold: "The trap:",
+          text: "Information overload. New models and tools ship every week.",
         },
-        {
-          marker: "bullet",
-          bold: "The first-mover advantage:",
-          text: "Whoever quickly spots a relevant use case is better positioned to land local projects.",
-        },
-        { marker: "bullet", bold: "Your lean monitoring routine:" },
+        { marker: "bullet", bold: "The minimalist, sustainable method:" },
         {
           marker: "bullet",
           indent: 1,
-          bold: "Two information sources, maximum:",
-          text: "one concise newsletter (TLDR AI or The Rundown AI) + one trusted technical community or channel.",
+          bold: "For video:",
+          text: "Follow one relevant channel (e.g. Entrepreneur DZ — youtube.com/@Entrepreneurdz).",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Not 10 newsletters: just one focused read (e.g. TLDR AI — tldr.tech/ai, 5 minutes, or Superhuman AI — joinsuperhuman.ai).",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "One single ritual: 10 minutes every Sunday evening or Monday morning at 8 AM.",
         },
         {
           marker: "quote",
           indent: 1,
-          text: "“Your diploma says what you learned yesterday. Staying informed shows what you're capable of producing tomorrow.”",
+          text: "“You don't need to know everything. You need to know where to look the day you need it.”",
         },
       ],
     },
     {
       type: "content",
-      eyebrow: "Slide 4/4",
+      eyebrow: "Slide 5/5",
       title: "Your Commitment Starting Today",
       lines: [
         {
