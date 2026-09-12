@@ -545,15 +545,15 @@ const fr: Deck = {
       message:
         "Merci pour votre attention ! (L'avenir se construit aujourd'hui.)",
       items: [
-        { label: "Site web", value: "mahfoudh.dev" },
-        {
-          label: "YouTube",
-          value: "@mahfoudh_arous (FR) · ورشة البرمجة مع محفوظ (AR)",
-        },
         {
           label: "Programme National 7.77",
           value:
             "[777.mpt.gov.dz](https://777.mpt.gov.dz/) — Ressources et accompagnement via le Skills Center Mobilis Chlef.",
+        },
+        { label: "Site web", value: "mahfoudh.dev" },
+        {
+          label: "YouTube",
+          value: "@mahfoudh_arous (FR) · ورشة البرمجة مع محفوظ (AR)",
         },
         {
           label: "Questions & Échanges d'expérience",
