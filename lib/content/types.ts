@@ -52,6 +52,9 @@ export interface UiStrings {
   swipeHint: string;
   keyboardHint: string;
   home: string;
+  fullscreen: string;
+  exitFullscreen: string;
+  scanToOpen: string;
 }
 
 export interface Deck {

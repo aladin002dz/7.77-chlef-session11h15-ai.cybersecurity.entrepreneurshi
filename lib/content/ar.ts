@@ -16,6 +16,9 @@ const ar: Deck = {
     swipeHint: "مرّر إصبعك للتنقّل",
     keyboardHint: "استخدم مفتاحي السهم ← →",
     home: "الرئيسية",
+    fullscreen: "ملء الشاشة",
+    exitFullscreen: "الخروج من ملء الشاشة",
+    scanToOpen: "مسح الرمز لفتح النسخة الإلكترونية",
   },
   slides: [
     {

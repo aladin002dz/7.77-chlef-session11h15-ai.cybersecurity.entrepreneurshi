@@ -5,8 +5,10 @@ import Link from "next/link";
 import type { Deck, Locale } from "@/lib/content";
 import { locales } from "@/lib/content";
 import { getAccent, accentClasses } from "@/lib/accent";
+import { LIVE_PREVIEW_URL } from "@/lib/site";
 import SlideView from "./SlideView";
 import HtmlLangSetter from "./HtmlLangSetter";
+import QrCode from "./QrCode";
 
 const LOCALE_HREF: Record<Locale, string> = {
   fr: "/",
@@ -27,6 +29,7 @@ function slideIndexFromHash(total: number): number {
 export default function Slideshow({ deck }: { deck: Deck }) {
   const total = deck.slides.length;
   const [index, setIndex] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
@@ -66,6 +69,26 @@ export default function Slideshow({ deck }: { deck: Deck }) {
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [next, prev, goTo, total]);
+
+  useEffect(() => {
+    function onFullscreenChange() {
+      setIsFullscreen(document.fullscreenElement !== null);
+    }
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+    return () =>
+      document.removeEventListener("fullscreenchange", onFullscreenChange);
+  }, []);
+
+  const toggleFullscreen = useCallback(() => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      document.documentElement.requestFullscreen().catch(() => {
+        // Fullscreen can be denied (e.g. no user gesture, iOS Safari) —
+        // fail silently, the button simply has no effect that time.
+      });
+    }
+  }, []);
 
   function onTouchStart(e: React.TouchEvent) {
     const t = e.touches[0];
@@ -118,25 +141,36 @@ export default function Slideshow({ deck }: { deck: Deck }) {
         <span className="text-xs font-semibold tracking-wide text-slate-500 sm:text-sm">
           7.77 · Chlef
         </span>
-        <nav
-          aria-label={deck.ui.switchLanguage}
-          className="flex gap-1 rounded-full border border-white/10 bg-white/5 p-1"
-        >
-          {locales.map((loc) => (
-            <Link
-              key={loc}
-              href={LOCALE_HREF[loc]}
-              className={`rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors sm:text-sm ${
-                loc === deck.locale
-                  ? `${a.bg} ${a.text}`
-                  : "text-slate-400 hover:text-slate-200"
-              }`}
-              aria-current={loc === deck.locale ? "page" : undefined}
-            >
-              {loc}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={toggleFullscreen}
+            aria-label={isFullscreen ? deck.ui.exitFullscreen : deck.ui.fullscreen}
+            title={isFullscreen ? deck.ui.exitFullscreen : deck.ui.fullscreen}
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:bg-white/10 hover:text-slate-100"
+          >
+            {isFullscreen ? <CompressIcon /> : <ExpandIcon />}
+          </button>
+          <nav
+            aria-label={deck.ui.switchLanguage}
+            className="flex gap-1 rounded-full border border-white/10 bg-white/5 p-1"
+          >
+            {locales.map((loc) => (
+              <Link
+                key={loc}
+                href={LOCALE_HREF[loc]}
+                className={`rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors sm:text-sm ${
+                  loc === deck.locale
+                    ? `${a.bg} ${a.text}`
+                    : "text-slate-400 hover:text-slate-200"
+                }`}
+                aria-current={loc === deck.locale ? "page" : undefined}
+              >
+                {loc}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
 
       {/* slide */}
@@ -180,7 +214,46 @@ export default function Slideshow({ deck }: { deck: Deck }) {
           <ChevronRight />
         </button>
       </div>
+
+      {index === 0 ? (
+        <div className="pointer-events-none absolute bottom-24 end-4 z-10 flex flex-col items-center gap-1.5 sm:bottom-28 sm:end-8">
+          <div className="pointer-events-auto rounded-2xl border border-white/10 bg-white/5 p-2 shadow-lg shadow-black/20 backdrop-blur">
+            <QrCode value={LIVE_PREVIEW_URL} label={deck.ui.scanToOpen} />
+          </div>
+          <span className="max-w-[7rem] text-center text-[0.65rem] leading-tight text-slate-500">
+            {deck.ui.scanToOpen}
+          </span>
+        </div>
+      ) : null}
     </div>
+  );
+}
+
+function ExpandIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4">
+      <path
+        d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function CompressIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4">
+      <path
+        d="M4 9h5V4M4 15h5v5M20 9h-5V4M20 15h-5v5"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 

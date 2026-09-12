@@ -16,6 +16,9 @@ const en: Deck = {
     swipeHint: "Swipe to navigate",
     keyboardHint: "Use the ← → arrow keys",
     home: "Home",
+    fullscreen: "Fullscreen",
+    exitFullscreen: "Exit fullscreen",
+    scanToOpen: "Scan to open online",
   },
   slides: [
     {
