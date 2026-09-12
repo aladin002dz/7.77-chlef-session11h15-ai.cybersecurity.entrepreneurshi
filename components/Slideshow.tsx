@@ -7,7 +7,6 @@ import { locales } from "@/lib/content";
 import { getAccent, accentClasses } from "@/lib/accent";
 import { LIVE_PREVIEW_URL } from "@/lib/site";
 import SlideView from "./SlideView";
-import HtmlLangSetter from "./HtmlLangSetter";
 import QrCode from "./QrCode";
 
 const LOCALE_HREF: Record<Locale, string> = {
@@ -121,8 +120,6 @@ export default function Slideshow({ deck }: { deck: Deck }) {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      <HtmlLangSetter locale={deck.locale} dir={deck.dir} />
-
       <div
         className={`pointer-events-none absolute inset-0 bg-gradient-to-b ${a.glow} to-transparent`}
         aria-hidden
