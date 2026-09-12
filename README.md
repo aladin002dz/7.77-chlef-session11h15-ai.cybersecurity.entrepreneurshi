@@ -1,5 +1,7 @@
 # IA, Cybersécurité & Entrepreneuriat Digital
 
+🔗 **[Live preview](https://aladin002dz.github.io/7.77-chlef-session11h15-ai.cybersecurity.entrepreneurshi/)**
+
 Diapositives interactives de l'atelier **Programme 7.77 · Skills Center Mobilis Chlef**, animé par Mahfoudh Arous.
 
 Le contenu original (`SESSION_11h15_24-30_ANS.md`) a été transformé en un mini-site de présentation navigable :
