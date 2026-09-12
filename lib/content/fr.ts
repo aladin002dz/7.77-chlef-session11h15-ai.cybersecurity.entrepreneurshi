@@ -6,7 +6,7 @@ const fr: Deck = {
   meta: {
     title: "IA, Cybersécurité & Entrepreneuriat Digital",
     description:
-      "Diapositives de l'atelier — Programme 7.77, Skills Center Mobilis Chlef.",
+      "Atelier pour les 24-30 ans (Programme 7.77, Skills Center Mobilis Chlef, animé par Mahfoudh Arous) : prompts IA pour trouver des clients en freelance, cybersécurité freelance (protéger données et appareils) et entrepreneuriat digital.",
   },
   ui: {
     langName: "Français",

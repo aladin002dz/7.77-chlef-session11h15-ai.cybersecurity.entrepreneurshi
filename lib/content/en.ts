@@ -6,7 +6,7 @@ const en: Deck = {
   meta: {
     title: "AI, Cybersecurity & Digital Entrepreneurship",
     description:
-      "Workshop slides — Programme 7.77, Skills Center Mobilis Chlef.",
+      "Workshop for ages 24-30 (Programme 7.77, Skills Center Mobilis Chlef, hosted by Mahfoudh Arous): AI prompts to land freelance clients, freelance cybersecurity (protecting data and devices), and digital entrepreneurship.",
   },
   ui: {
     langName: "English",

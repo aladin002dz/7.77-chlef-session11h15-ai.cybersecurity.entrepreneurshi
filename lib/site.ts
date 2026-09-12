@@ -28,3 +28,15 @@ export const DEFAULT_LOCALE: Locale = "fr";
 export function localeUrl(locale: Locale): string {
   return new URL(LOCALE_PATH[locale], LIVE_PREVIEW_URL).toString();
 }
+
+/**
+ * Absolute URL for a static file under `public/`, resolved against the
+ * deployed GitHub Pages path (`LIVE_PREVIEW_URL`). Metadata fields (icons,
+ * Open Graph/Twitter images) must use this instead of a root-relative
+ * string like "/favicon.svg": Next does not rewrite plain metadata strings
+ * with `basePath`, so a root-relative href 404s once the site is served
+ * from a sub-path.
+ */
+export function siteAsset(path: string): string {
+  return new URL(path, LIVE_PREVIEW_URL).toString();
+}

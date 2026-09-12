@@ -45,5 +45,10 @@ Chaque langue est un fichier de données (`lib/content/fr.ts`, `en.ts`, `ar.ts`)
 
 1. Créer `lib/content/<code>.ts` en copiant `en.ts` et en traduisant.
 2. L'enregistrer dans `lib/content/index.ts` (`decks`, `locales`).
-3. Créer `app/<code>/page.tsx` (copier `app/en/page.tsx`).
-4. Ajouter `<code>` dans `LOCALE_HREF` de `components/Slideshow.tsx`.
+3. Créer un nouveau groupe de routes `app/(<code>)/<code>/page.tsx` (copier
+   `app/(en)/en/page.tsx`), avec son propre `app/(<code>)/layout.tsx`
+   (copier `app/(en)/layout.tsx`, en ajustant `locale`/`dir`) — chaque
+   langue a son propre root layout pour que `lang`/`dir` soient corrects
+   dans le HTML statique dès le premier octet (voir `components/RootDocument.tsx`).
+4. Ajouter `<code>` dans `LOCALE_PATH` (`lib/site.ts`) et dans
+   `LOCALE_HREF` (`components/Slideshow.tsx`).
