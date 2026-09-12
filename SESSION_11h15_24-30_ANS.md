@@ -175,5 +175,5 @@
 - **Message :** **Merci pour votre attention !** (L'avenir se construit aujourd'hui).
 - **Site web :** `mahfoudh.dev`
 - **YouTube :** `@mahfoudh_arous` (FR) · `ورشة البرمجة مع محفوظ` (AR)
-- **Programme National 7.77 :** Ressources et accompagnement via le Skills Center Mobilis Chlef.
+- **Programme National 7.77 :** [777.mpt.gov.dz](https://777.mpt.gov.dz/) — Ressources et accompagnement via le Skills Center Mobilis Chlef.
 - **Questions & Échanges d'expérience :** Micro ouvert.

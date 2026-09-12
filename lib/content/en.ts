@@ -553,7 +553,7 @@ const en: Deck = {
         {
           label: "National Programme 7.77",
           value:
-            "Resources and support via the Skills Center Mobilis Chlef.",
+            "[777.mpt.gov.dz](https://777.mpt.gov.dz/) — Resources and support via the Skills Center Mobilis Chlef.",
         },
         {
           label: "Questions & Shared Experience",
