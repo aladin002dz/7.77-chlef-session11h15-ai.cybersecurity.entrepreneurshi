@@ -1,6 +1,7 @@
 import type { SlideLine } from "@/lib/content";
 import type { Accent } from "@/lib/accent";
 import { accentClasses } from "@/lib/accent";
+import { renderInline } from "@/lib/inlineMarkdown";
 
 function Marker({
   line,
@@ -63,9 +64,11 @@ export default function SlideBody({
           <Marker line={line} accent={a} />
           <span className="text-[1.05rem] leading-relaxed sm:text-xl sm:leading-relaxed">
             {line.bold ? (
-              <span className={`font-semibold ${a.text}`}>{line.bold} </span>
+              <span className={`font-semibold ${a.text}`}>
+                {renderInline(line.bold)}{" "}
+              </span>
             ) : null}
-            {line.text}
+            {line.text ? renderInline(line.text) : null}
           </span>
         </li>
       ))}

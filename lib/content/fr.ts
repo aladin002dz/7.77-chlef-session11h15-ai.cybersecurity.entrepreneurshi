@@ -676,12 +676,12 @@ const fr: Deck = {
           marker: "bullet",
           indent: 1,
           bold: "Pour la vidéo :",
-          text: "Suivre une chaîne pertinente (ex : Entrepreneur DZ — youtube.com/@Entrepreneurdz).",
+          text: "Suivre une chaîne pertinente (ex : [Entrepreneur DZ](https://www.youtube.com/@Entrepreneurdz/)).",
         },
         {
           marker: "bullet",
           indent: 1,
-          text: "Pas 10 newsletters : une seule lecture ciblée (ex : TLDR AI — tldr.tech/ai en 5 minutes ou Superhuman AI — joinsuperhuman.ai).",
+          text: "Pas 10 newsletters : une seule lecture ciblée (ex : [TLDR AI](https://tldr.tech/ai) en 5 minutes ou [Superhuman AI](https://www.joinsuperhuman.ai/)).",
         },
         {
           marker: "bullet",
