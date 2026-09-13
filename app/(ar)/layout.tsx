@@ -3,7 +3,9 @@ import RootDocument from "@/components/RootDocument";
 import { baseMetadata } from "@/lib/metadata";
 import "../globals.css";
 
-// Root layout for the Arabic locale ("/ar", RTL) — see app/(fr)/layout.tsx.
+// Root layout for the Arabic locale ("/", RTL), the site's default
+// language — see app/(en)/layout.tsx and app/(fr)/layout.tsx for the
+// other two.
 export const metadata: Metadata = baseMetadata;
 
 export const viewport: Viewport = {

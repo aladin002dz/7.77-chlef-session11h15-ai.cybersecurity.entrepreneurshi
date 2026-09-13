@@ -3,8 +3,9 @@ import RootDocument from "@/components/RootDocument";
 import { baseMetadata } from "@/lib/metadata";
 import "../globals.css";
 
-// Root layout for the French locale ("/"), the site's default language —
-// see app/(en)/layout.tsx and app/(ar)/layout.tsx for the other two.
+// Root layout for the French locale ("/fr") — see app/(en)/layout.tsx and
+// app/(ar)/layout.tsx (the site's default language, served at "/") for
+// the other two.
 export const metadata: Metadata = baseMetadata;
 
 export const viewport: Viewport = {

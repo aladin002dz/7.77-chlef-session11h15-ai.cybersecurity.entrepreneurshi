@@ -5,7 +5,7 @@ import ar from "./ar";
 
 export const decks: Record<Locale, Deck> = { fr, en, ar };
 
-export const locales: Locale[] = ["fr", "en", "ar"];
+export const locales: Locale[] = ["ar", "en", "fr"];
 
 export function getDeck(locale: Locale): Deck {
   return decks[locale];

@@ -8,7 +8,7 @@ Le contenu original (`SESSION_11h15_24-30_ANS.md`) a été transformé en un min
 
 - **Sur ordinateur** : flèches `←` `→` du clavier (ou les boutons de navigation).
 - **Sur mobile** : glisser le doigt à gauche/droite (swipe) sur l'écran.
-- **3 langues** : Français (`/`), English (`/en`), العربية (`/ar`, mise en page RTL).
+- **3 langues** : العربية (`/`, mise en page RTL, langue par défaut), English (`/en`), Français (`/fr`).
 - **Responsive** : de la taille smartphone au grand écran de projection.
 
 ## Stack technique

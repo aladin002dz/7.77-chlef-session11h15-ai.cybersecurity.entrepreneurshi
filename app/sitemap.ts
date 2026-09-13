@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: localeUrl(locale),
     lastModified,
     changeFrequency: "monthly",
-    priority: locale === "fr" ? 1 : 0.8,
+    priority: locale === DEFAULT_LOCALE ? 1 : 0.8,
     alternates: { languages },
   }));
 }
