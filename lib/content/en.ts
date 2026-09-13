@@ -291,6 +291,29 @@ const en: Deck = {
     {
       type: "content",
       eyebrow: "Slide 10/11",
+      title: "The Hallucination Wall",
+      lines: [
+        { marker: "bullet", bold: "Warning:" },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Ask AI for local administrative hours, precise Algerian tax law, or business contact details.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "It can invent addresses in Chlef or cite outdated legal articles with total confidence.",
+        },
+        {
+          marker: "bullet",
+          bold: "Consequence:",
+          text: "If you hand a client a deliverable containing a hallucination, your local professional reputation can take a serious hit.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Slide 11/11",
       title: "Hands-On Workshop (30 min — Pair Work)",
       lines: [
         { marker: "bullet", bold: "Instructions:" },
@@ -333,33 +356,41 @@ const en: Deck = {
         },
       ],
     },
-    {
-      type: "content",
-      eyebrow: "Slide 11/11",
-      title: "The Hallucination Wall",
-      lines: [
-        { marker: "bullet", bold: "Warning:" },
-        {
-          marker: "bullet",
-          indent: 1,
-          text: "Ask AI for local administrative hours, precise Algerian tax law, or business contact details.",
-        },
-        {
-          marker: "bullet",
-          indent: 1,
-          text: "It can invent addresses in Chlef or cite outdated legal articles with total confidence.",
-        },
-        {
-          marker: "bullet",
-          bold: "Consequence:",
-          text: "If you hand a client a deliverable containing a hallucination, your local professional reputation can take a serious hit.",
-        },
-      ],
-    },
     { type: "block", label: "Block 2", title: "Cybersecurity" },
     {
       type: "content",
-      eyebrow: "Slide 1/1",
+      eyebrow: "Slide 1/5",
+      title: "Immediate Action — Securing Your Mailbox",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Why the mailbox?",
+          text: "It's the cornerstone of your entire digital life. Whoever controls your mailbox can reset your banks, social networks, and administrative accounts.",
+        },
+        { marker: "bullet", bold: "Live procedure (2 minutes):" },
+        {
+          marker: "number",
+          number: 1,
+          indent: 1,
+          text: "Check whether your credentials have already leaked on haveibeenpwned.com.",
+        },
+        {
+          marker: "number",
+          number: 2,
+          indent: 1,
+          text: "Open your Google / Microsoft account settings on your smartphone.",
+        },
+        {
+          marker: "number",
+          number: 3,
+          indent: 1,
+          text: "Turn on two-step verification (2FA / Two-Factor Authentication).",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Slide 2/5",
       title: "Freelance Cybersecurity — Protecting Your Data and Devices",
       lines: [
         { marker: "bullet", bold: "1. Fake job offers:" },
@@ -396,10 +427,135 @@ const en: Deck = {
         },
       ],
     },
+    {
+      type: "content",
+      eyebrow: "Slide 3/5",
+      title: "Cybersecurity — The Malicious Links and QR Codes Trap",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "The QR Code Danger (Quishing):",
+          text: "Scanning a QR code in a public place or on an unverified document can redirect you to a fraudulent site or download malware without your knowledge.",
+        },
+        {
+          marker: "bullet",
+          bold: "Misleading Links (Phishing):",
+          text: "Be wary of links received by SMS (smishing), email, or on social media. Hackers often clone official sites (banks, government services) to steal your credentials.",
+        },
+        { marker: "bullet", bold: "The right reflexes:" },
+        {
+          marker: "number",
+          number: 1,
+          indent: 1,
+          bold: "Check the URL:",
+          text: "Before entering a password or any data, make sure the site's address is exact.",
+        },
+        {
+          marker: "number",
+          number: 2,
+          indent: 1,
+          bold: "Don't scan blindly:",
+          text: "Avoid scanning suspicious QR codes or ones stuck over other signage.",
+        },
+        {
+          marker: "number",
+          number: 3,
+          indent: 1,
+          bold: "Prefer direct access:",
+          text: "Type the service's web address yourself instead of clicking a received link.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Slide 4/5",
+      title: "The “Vibe Coding” Trap",
+      lines: [
+        { marker: "bullet", bold: "What is vibe coding?" },
+        { marker: "bullet", bold: "The Major Dangers:" },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Hardcoded credentials:",
+          text: "AI can generate code containing your passwords or API keys hardcoded in plain sight, exposing them to everyone if the code is published.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Ignored security flaws:",
+          text: "By blindly copy-pasting generated code, users leave major security flaws in their applications, easily exploited by hackers.",
+        },
+        { marker: "bullet", bold: "The Golden Rule (Securing your keys):" },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Always store your API keys and passwords in a .env file.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Crucial:",
+          text: "Make sure to add that .env file to your .gitignore to avoid it being accidentally published on platforms like GitHub.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Always have your applications' security validated before publishing them.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Slide 5/5",
+      title: "Protecting Your Money & Loved Ones (BaridiMob & AI)",
+      lines: [
+        { marker: "bullet", bold: "BaridiMob & E-commerce Fraud:" },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Golden rule:",
+          text: "The SMS / OTP code is your signature. Never give it out. No Algérie Poste agent will ever call you to verify an account.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "The Instagram-page scam:",
+          text: "Be wary of online sellers (clothes, tech) with no physical store who demand full payment via BaridiMob before delivery.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "The “cracked app” trap:",
+          text: "Downloading a free APK (modded Spotify, fake WhatsApp) outside official stores is the best way to get your OTPs stolen. These apps read your SMS in the background and drain your account.",
+        },
+        {
+          marker: "bullet",
+          bold: "Social Engineering & AI Voice Cloning:",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "The urgency scam:",
+          text: "You receive a WhatsApp message (or even an AI-cloned voice message) from a friend or family member: “I'm stuck, send me 5,000 DA to this BaridiMob number urgently.”",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Your role as a shield:",
+          text: "You are often the “tech support” for your parents. Make them aware to never transfer money after a simple message.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "The immediate antidote:",
+          text: "Don't trust the voice or the photo. Hang up and call the person directly (a regular phone call) to confirm.",
+        },
+      ],
+    },
     { type: "block", label: "Block 3", title: "Digital Entrepreneurship" },
     {
       type: "content",
-      eyebrow: "Slide 1/5",
+      eyebrow: "Slide 1/3",
       title: "Valuing Your Skills in Algeria — The Reality on the Ground",
       lines: [
         { marker: "bullet", bold: "The national market:" },
@@ -433,7 +589,7 @@ const en: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Slide 2/5",
+      eyebrow: "Slide 2/3",
       title: "Building Your Expertise and Visibility",
       lines: [
         {
@@ -460,7 +616,7 @@ const en: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Slide 3/5",
+      eyebrow: "Slide 3/3",
       title: "The 30-Day Rule",
       lines: [
         {
@@ -481,15 +637,40 @@ const en: Deck = {
       ],
     },
     {
+      type: "block",
+      label: "Block 4",
+      title: "Conclusion & Call to Action",
+    },
+    {
       type: "content",
-      eyebrow: "Slide 4/5",
-      title: "Staying Current Without Losing Your Evenings",
+      eyebrow: "Slide 1/2",
+      title: "Your Commitment Starting Today",
       lines: [
         {
-          marker: "bullet",
-          bold: "The trap:",
-          text: "Information overload. New models and tools ship every week.",
+          marker: "number",
+          number: 1,
+          bold: "Two-factor authentication (2FA) enabled",
+          text: "on your professional email and WhatsApp.",
         },
+        {
+          marker: "number",
+          number: 2,
+          bold: "One finished, concrete proof",
+          text: "(a mini case-file or a 2-page audit made with AI's help).",
+        },
+        {
+          marker: "number",
+          number: 3,
+          bold: "Three targeted outreach messages",
+          text: "sent over the course of the week.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Slide 2/2",
+      title: "Staying Current Without Losing Your Evenings",
+      lines: [
         { marker: "bullet", bold: "The minimalist, sustainable method:" },
         {
           marker: "bullet",
@@ -505,37 +686,7 @@ const en: Deck = {
         {
           marker: "bullet",
           indent: 1,
-          text: "One single ritual: 10 minutes every Sunday evening or Monday morning at 8 AM.",
-        },
-        {
-          marker: "quote",
-          indent: 1,
-          text: "“You don't need to know everything. You need to know where to look the day you need it.”",
-        },
-      ],
-    },
-    {
-      type: "content",
-      eyebrow: "Slide 5/5",
-      title: "Your Commitment Starting Today",
-      lines: [
-        {
-          marker: "number",
-          number: 1,
-          bold: "One finished, concrete proof",
-          text: "(a mini case-file or a 2-page audit made with AI's help).",
-        },
-        {
-          marker: "number",
-          number: 2,
-          bold: "Three targeted outreach messages",
-          text: "sent before 8 PM tonight.",
-        },
-        {
-          marker: "number",
-          number: 3,
-          bold: "Two-factor authentication (2FA) enabled",
-          text: "on your professional email and WhatsApp.",
+          text: "One single ritual: 10 minutes every Saturday evening or Sunday morning at 8 AM.",
         },
       ],
     },
