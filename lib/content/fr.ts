@@ -291,6 +291,29 @@ const fr: Deck = {
     {
       type: "content",
       eyebrow: "Diapositive 10/11",
+      title: "Le Mur des Hallucinations",
+      lines: [
+        { marker: "bullet", bold: "Mise en garde :" },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Demandez à l'IA des horaires administratifs locaux, des lois fiscales algériennes précises ou des coordonnées d'entreprises.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Elle peut inventer des adresses à Chlef ou citer des articles de loi obsolètes avec un aplomb total.",
+        },
+        {
+          marker: "bullet",
+          bold: "Conséquence :",
+          text: "Si vous présentez un livrable contenant une hallucination à un client, votre réputation professionnelle locale peut être fortement compromise.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Diapositive 11/11",
       title: "Atelier Pratique (30 min — Travail en Binômes)",
       lines: [
         { marker: "bullet", bold: "Consignes :" },
@@ -333,33 +356,41 @@ const fr: Deck = {
         },
       ],
     },
-    {
-      type: "content",
-      eyebrow: "Diapositive 11/11",
-      title: "Le Mur des Hallucinations",
-      lines: [
-        { marker: "bullet", bold: "Mise en garde :" },
-        {
-          marker: "bullet",
-          indent: 1,
-          text: "Demandez à l'IA des horaires administratifs locaux, des lois fiscales algériennes précises ou des coordonnées d'entreprises.",
-        },
-        {
-          marker: "bullet",
-          indent: 1,
-          text: "Elle peut inventer des adresses à Chlef ou citer des articles de loi obsolètes avec un aplomb total.",
-        },
-        {
-          marker: "bullet",
-          bold: "Conséquence :",
-          text: "Si vous présentez un livrable contenant une hallucination à un client, votre réputation professionnelle locale peut être fortement compromise.",
-        },
-      ],
-    },
     { type: "block", label: "Bloc 2", title: "Cybersécurité" },
     {
       type: "content",
-      eyebrow: "Diapositive 1/1",
+      eyebrow: "Diapositive 1/5",
+      title: "Action Immédiate — Sécuriser sa Boîte Mail",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Pourquoi la boîte mail ?",
+          text: "C'est la clé de voûte de toute votre existence numérique. Qui contrôle votre boîte mail peut réinitialiser vos banques, réseaux sociaux et démarches administratives.",
+        },
+        { marker: "bullet", bold: "Procédure en direct (2 minutes) :" },
+        {
+          marker: "number",
+          number: 1,
+          indent: 1,
+          text: "Vérifier si vos identifiants ont déjà fuité sur haveibeenpwned.com.",
+        },
+        {
+          marker: "number",
+          number: 2,
+          indent: 1,
+          text: "Ouvrir les paramètres du compte Google / Microsoft sur votre smartphone.",
+        },
+        {
+          marker: "number",
+          number: 3,
+          indent: 1,
+          text: "Activer la validation en deux étapes (2FA / Double Authentification).",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Diapositive 2/5",
       title: "Cybersécurité Freelance — Protéger ses Données et son Matériel",
       lines: [
         { marker: "bullet", bold: "1. Fausses offres de missions :" },
@@ -396,10 +427,135 @@ const fr: Deck = {
         },
       ],
     },
+    {
+      type: "content",
+      eyebrow: "Diapositive 3/5",
+      title: "Cybersécurité — Le Piège des Liens et QR Codes Malveillants",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Le Danger des QR Codes (Quishing) :",
+          text: "Scanner un QR code dans un lieu public ou sur un document non vérifié peut vous rediriger vers un site frauduleux ou télécharger un malware à votre insu.",
+        },
+        {
+          marker: "bullet",
+          bold: "Les Liens Trompeurs (Phishing) :",
+          text: "Méfiez-vous des liens reçus par SMS (Smishing), email ou sur les réseaux sociaux. Les pirates clonent souvent des sites officiels (banques, services publics) pour voler vos identifiants.",
+        },
+        { marker: "bullet", bold: "Les bons réflexes :" },
+        {
+          marker: "number",
+          number: 1,
+          indent: 1,
+          bold: "Vérifiez l'URL :",
+          text: "Avant d'entrer un mot de passe ou des données, assurez-vous que l'adresse du site est exacte.",
+        },
+        {
+          marker: "number",
+          number: 2,
+          indent: 1,
+          bold: "Ne scannez pas aveuglément :",
+          text: "Évitez de scanner des QR codes douteux ou collés par-dessus d'autres affichages.",
+        },
+        {
+          marker: "number",
+          number: 3,
+          indent: 1,
+          bold: "Privilégiez l'accès direct :",
+          text: "Tapez vous-même l'adresse du service web au lieu de cliquer sur un lien reçu.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Diapositive 4/5",
+      title: 'Le Piège du « Vibe Coding »',
+      lines: [
+        { marker: "bullet", bold: "Qu'est-ce que le Vibe Coding ?" },
+        { marker: "bullet", bold: "Les Dangers Majeurs :" },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Identifiants en clair :",
+          text: "L'IA peut générer du code contenant vos mots de passe ou clés d'API en dur, les rendant accessibles à tous si le code est publié.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Failles de sécurité ignorées :",
+          text: "En copiant-collant aveuglément le code généré, les utilisateurs laissent des failles de sécurité majeures dans leurs applications, facilement exploitables par les pirates.",
+        },
+        { marker: "bullet", bold: "La Règle d'Or (Sécurisation des clés) :" },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Stockez toujours vos clés d'API et mots de passe dans un fichier .env.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Crucial :",
+          text: "Ajoutez impérativement ce fichier .env à votre fichier .gitignore pour éviter qu'il ne soit publié accidentellement sur des plateformes comme GitHub.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          text: "Faites toujours valider la sécurité de vos applications avant de les publier.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Diapositive 5/5",
+      title: "Protéger son Argent & ses Proches (BaridiMob & IA)",
+      lines: [
+        { marker: "bullet", bold: "Fraudes BaridiMob & E-commerce :" },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Règle absolue :",
+          text: "Le code SMS / OTP est votre signature. Ne le donnez jamais. Aucun agent d'Algérie Poste ne vous appellera pour vérifier un compte.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "L'arnaque des pages Instagram :",
+          text: "Méfiez-vous des vendeurs en ligne (vêtements, tech) sans magasin physique qui exigent un paiement total via BaridiMob avant la livraison.",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: 'Le piège des applications « Crackées » :',
+          text: "Télécharger un APK gratuit (Spotify moddé, faux WhatsApp) hors des stores officiels est le meilleur moyen de se faire voler ses OTP. Ces applis lisent vos SMS en arrière-plan et vident votre compte.",
+        },
+        {
+          marker: "bullet",
+          bold: "Ingénierie Sociale & Clonage Vocal (IA) :",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "L'arnaque de l'urgence :",
+          text: "Vous recevez un message WhatsApp (ou même un vocal cloné par IA) d'un ami ou d'un membre de la famille : « Je suis bloqué, envoie-moi 5000 DA sur ce numéro BaridiMob en urgence ».",
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "Le rôle de bouclier :",
+          text: 'Vous êtes souvent le « tech support » de vos parents. Sensibilisez-les à ne jamais transférer d\'argent suite à un simple message.',
+        },
+        {
+          marker: "bullet",
+          indent: 1,
+          bold: "L'antidote immédiat :",
+          text: "Ne vous fiez pas à la voix ni à la photo. Raccrochez et appelez la personne directement (par appel téléphonique classique) pour confirmer.",
+        },
+      ],
+    },
     { type: "block", label: "Bloc 3", title: "Entrepreneuriat Digital" },
     {
       type: "content",
-      eyebrow: "Diapositive 1/5",
+      eyebrow: "Diapositive 1/3",
       title: "Valoriser ses Compétences en Algérie — La Réalité du Terrain",
       lines: [
         { marker: "bullet", bold: "Le marché national :" },
@@ -433,7 +589,7 @@ const fr: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Diapositive 2/5",
+      eyebrow: "Diapositive 2/3",
       title: "Valoriser son Expertise et sa Visibilité",
       lines: [
         {
@@ -460,7 +616,7 @@ const fr: Deck = {
     },
     {
       type: "content",
-      eyebrow: "Diapositive 3/5",
+      eyebrow: "Diapositive 3/3",
       title: "La Règle des 30 Jours",
       lines: [
         {
@@ -481,15 +637,40 @@ const fr: Deck = {
       ],
     },
     {
+      type: "block",
+      label: "Bloc 4",
+      title: "Conclusion & Passage à l'Action",
+    },
+    {
       type: "content",
-      eyebrow: "Diapositive 4/5",
-      title: "Rester à Jour Sans Y Passer ses Soirées",
+      eyebrow: "Diapositive 1/2",
+      title: "Votre Engagement Dès Aujourd'hui",
       lines: [
         {
-          marker: "bullet",
-          bold: "Le piège :",
-          text: "La surcharge informationnelle. De nouveaux modèles et outils sortent chaque semaine.",
+          marker: "number",
+          number: 1,
+          bold: "Double authentification (2FA) activée",
+          text: "sur votre email professionnel et WhatsApp.",
         },
+        {
+          marker: "number",
+          number: 2,
+          bold: "Une preuve concrète finalisée",
+          text: "(mini-dossier ou audit de 2 pages avec l'aide de l'IA).",
+        },
+        {
+          marker: "number",
+          number: 3,
+          bold: "Trois prises de contact ciblées",
+          text: "envoyées au cours de la semaine.",
+        },
+      ],
+    },
+    {
+      type: "content",
+      eyebrow: "Diapositive 2/2",
+      title: "Rester à Jour Sans Y Passer ses Soirées",
+      lines: [
         { marker: "bullet", bold: "La méthode minimaliste et durable :" },
         {
           marker: "bullet",
@@ -505,37 +686,7 @@ const fr: Deck = {
         {
           marker: "bullet",
           indent: 1,
-          text: "Un rituel unique : 10 minutes chaque dimanche soir ou lundi matin à 08h00.",
-        },
-        {
-          marker: "quote",
-          indent: 1,
-          text: "« Vous n'avez pas besoin de tout savoir. Vous avez besoin de savoir où regarder le jour où vous en aurez besoin. »",
-        },
-      ],
-    },
-    {
-      type: "content",
-      eyebrow: "Diapositive 5/5",
-      title: "Votre Engagement Dès Aujourd'hui",
-      lines: [
-        {
-          marker: "number",
-          number: 1,
-          bold: "Une preuve concrète finalisée",
-          text: "(mini-dossier ou audit de 2 pages avec l'aide de l'IA).",
-        },
-        {
-          marker: "number",
-          number: 2,
-          bold: "Trois prises de contact ciblées",
-          text: "envoyées avant 20h00 ce soir.",
-        },
-        {
-          marker: "number",
-          number: 3,
-          bold: "Double authentification (2FA) activée",
-          text: "sur votre email professionnel et WhatsApp.",
+          text: "Un rituel unique : 10 minutes chaque samedi soir ou dimanche matin à 08h00.",
         },
       ],
     },
