@@ -695,10 +695,12 @@ const ar: Deck = {
       title: "الموارد وجهات التواصل",
       message: "شكرًا على حسن انتباهكم! (المستقبل يُبنى اليوم.)",
       items: [
-        { label: "الموقع الإلكتروني", value: "mahfoudh.dev" },
+        { label: "الموقع الإلكتروني", value: "[mahfoudh.dev](https://mahfoudh.dev)" },
         {
           label: "يوتيوب",
-          value: "@mahfoudh_arous (بالفرنسية) · ورشة البرمجة مع محفوظ (بالعربية)",
+          value:
+            "[@mahfoudh_arous](https://www.youtube.com/@mahfoudh_arous) (بالفرنسية) · " +
+            "[ورشة البرمجة مع محفوظ](https://www.youtube.com/@%D9%88%D8%B1%D8%B4%D8%A9_%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D9%85%D8%B9_%D9%85%D8%AD%D9%81%D9%88%D8%B8) (بالعربية)",
         },
         {
           label: "البرنامج الوطني 7.77",
