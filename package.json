@@ -5,6 +5,7 @@
   "description": "IA, Cybersécurité & Entrepreneuriat Digital — diapositives interactives (FR / EN / AR)",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-og-image.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

@@ -7,6 +7,7 @@ import { locales } from "@/lib/content";
 import { getAccent, accentClasses } from "@/lib/accent";
 import { LIVE_PREVIEW_URL } from "@/lib/site";
 import SlideView from "./SlideView";
+import SlideTranscript from "./SlideTranscript";
 import QrCode from "./QrCode";
 
 const LOCALE_HREF: Record<Locale, string> = {
@@ -222,6 +223,8 @@ export default function Slideshow({ deck }: { deck: Deck }) {
           </span>
         </div>
       ) : null}
+
+      <SlideTranscript deck={deck} />
     </div>
   );
 }
