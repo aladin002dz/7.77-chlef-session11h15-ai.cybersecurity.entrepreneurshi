@@ -9,9 +9,9 @@ export const SITE_NAME = "Programme 7.77 · Skills Center Mobilis Chlef";
 
 /** Route segment (relative to {@link LIVE_PREVIEW_URL}) that serves each locale. */
 export const LOCALE_PATH: Record<Locale, string> = {
-  fr: "",
+  ar: "",
   en: "en/",
-  ar: "ar/",
+  fr: "fr/",
 };
 
 /** BCP 47 / Open Graph locale tag for each site locale. */
@@ -22,7 +22,7 @@ export const OG_LOCALE: Record<Locale, string> = {
 };
 
 /** The default locale served with no path prefix (`/`). */
-export const DEFAULT_LOCALE: Locale = "fr";
+export const DEFAULT_LOCALE: Locale = "ar";
 
 /** Absolute, canonical URL for a given locale's page. */
 export function localeUrl(locale: Locale): string {

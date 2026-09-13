@@ -11,9 +11,9 @@ import SlideTranscript from "./SlideTranscript";
 import QrCode from "./QrCode";
 
 const LOCALE_HREF: Record<Locale, string> = {
-  fr: "/",
+  ar: "/",
   en: "/en/",
-  ar: "/ar/",
+  fr: "/fr/",
 };
 
 /** Minimum horizontal drag, in px, before a touch gesture counts as a swipe. */
